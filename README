@@ -1,0 +1,5 @@
+Battleship
+==========
+
+This is a curses version of the popular game battleship. You can play against
+the computer or your friends over a network.

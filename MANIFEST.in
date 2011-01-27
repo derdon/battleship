@@ -1,0 +1,3 @@
+include MANIFEST.in README COPYING
+recursive-include custom_fixers *
+recursive-include test *

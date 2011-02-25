@@ -1,0 +1,7 @@
+- don't forget http://pytest.org/goodpractises.html#create-a-py-test-standalone-script
+- draw a rectangle around a ship if it is completely destroyed
+- display a "status" (two seperated lists) which shows (both for the player and
+  the enemy) ...
+  1. the destroyed ships
+  2. the ships which have not been destroyed yet
+- support clicking with the mouse on the buttons!

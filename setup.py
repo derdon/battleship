@@ -9,13 +9,19 @@ if sys.version_info < (2, 5):
 
 # copied from
 # http://lucumr.pocoo.org/2010/2/11/porting-to-python-3-a-guide/
+# (uncommented because Py3 is not supported yet but kept as a reminder)
 extra = {}
-if sys.version_info >= (3, 0):
-    extra.update(
-        use_2to3=True,
-        use_2to3_fixers=['custom_fixers'])
+#if sys.version_info >= (3, 0):
+#    extra.update(
+#        use_2to3=True,
+#        use_2to3_fixers=['custom_fixers'])
 
-requirements = ['asynchia', 'distribute']
+requirements = [
+    'urwid',
+    'logbook',
+    #'asynchia',
+    'distribute',
+]
 
 setup(
     name='battleship',
@@ -26,9 +32,10 @@ setup(
     author_email='liedtke.simon@googlemail.com',
     url='http://pypi.python.org/pypi/battleship',
     license='WTFPL',
+    packages=['battleship'],
     install_requires=requirements,
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 2 - Pre-Alpha',
         'Environment :: Console',
         'Environment :: Console :: Curses',
         'Intended Audience :: End Users/Desktop',
@@ -41,4 +48,3 @@ setup(
         'Topic :: Games/Entertainment'],
     **extra
 )
-
